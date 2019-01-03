@@ -1,0 +1,15 @@
+{
+  "name": "user-example-client",
+  "version": "2.0.0",
+  "description": "graphQL client in nodeJs",
+  "main": "server.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "graphql-request": "^1.8.2"
+  }
+}

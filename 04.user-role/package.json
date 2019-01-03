@@ -1,0 +1,16 @@
+{
+  "name": "user-example",
+  "version": "1.3.0",
+  "description": "graphQL User demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2"
+  }
+}
