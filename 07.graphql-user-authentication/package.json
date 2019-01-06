@@ -1,0 +1,17 @@
+{
+  "name": "user-example-e2e",
+  "version": "2.1.0",
+  "description": "graphQL User demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "jsonwebtoken": "^8.4.0"
+  }
+}

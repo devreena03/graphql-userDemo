@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8859-1" name="viewport" content="width=device-width, initial-scale=1">
+    <title>GraphQL client</title>
+
+    <script src="./js/userService.js"></script>
+
+</head>
+<body>
+    <div style="text-align: right; margin-top: 2%; margin-right: 10%">
+        <a href="/login">Login</a>
+    </div>
+
+        <div style="text-align: center; margin-top: 3%">
+            <h3>GraphQL client integration demo with Javascript Featch API</h3>
+               <br>
+              <button onclick="allUsers()">All Users details</button>&nbsp;&nbsp;&nbsp;
+              User Id: <input type="text" id="userId" value="1" size="4"/>&nbsp;&nbsp;
+              <button onclick="userById()">User Details By Id</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+              <button onclick="userWithRole()">User Details with Role</button>
+        </div>	
+
+        <div style="text-align: center;">
+            <h3>Output</h3>
+            <textarea name="" id="outputData" cols="70" rows="28"></textarea>
+        </div>
+        
+</body>
+</html>
