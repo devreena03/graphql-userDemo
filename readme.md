@@ -1,4 +1,6 @@
-***********Curl request*******
+#Client Testing
+
+###Curl request
 curl -X POST \
   http://localhost:4001/graphql \
   -H 'Content-Type: application/json' \
@@ -6,7 +8,8 @@ curl -X POST \
   -d '{
     "query": "{ users {id firstName login} }"
 }'
-*****************Postman testing********
+
+###Postman testing
 -> Method type: post
 -> URL: <base-url>/ graphql
 -> Header: Content-Type - application/json
@@ -17,7 +20,8 @@ curl -X POST \
           "query": "{ users {id firstName login} }"
          
 }
-*********************Ajax(Jquery)***************
+  
+###Ajax(Jquery)
 var request = {
   "async": true,
   "crossDomain": true,
@@ -33,7 +37,8 @@ var request = {
 $.ajax(request).done(function (response) {
   console.log(response);
 });
-*******************PHP Curl*************
+  
+###PHP Curl
 <?php
 
 $curl = curl_init();
@@ -60,14 +65,14 @@ if ($err) {
 } else {
   echo $response;
 }
-********************NodeJs********************
+
+###NodeJs
 var request = require("request");
 
 var options = { method: 'POST',
   url: 'http://localhost:4001/graphql',
   headers: 
-   { 'Postman-Token': '80db990b-7f64-4f86-b38d-69eb1f3e9ed6',
-     'cache-control': 'no-cache',
+   { 
      'Content-Type': 'application/json' },
   body: { query: '{ users {id firstName login} }' },
   json: true };
@@ -78,8 +83,9 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 
-********************Objective C********************
-#import <Foundation/Foundation.h>
+###Objective C
+
+import <Foundation/Foundation.h>
 
 NSDictionary *headers = @{ @"Content-Type": @"application/json" };
 NSDictionary *parameters = @{ @"query": @"{ users {id firstName login} }" };
@@ -103,7 +109,7 @@ NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request
                                             }];
 [dataTask resume];
 
-***********************Swift*********************
+###Swift
 import Foundation
 
 let headers = [
